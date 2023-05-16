@@ -102,4 +102,12 @@ class pagebreak extends question {
     public function mobile_question_display($qnum, $autonum = false) {
         return false;
     }
+
+    /**
+     * Override and return false if question should not be enumerated in the form template.
+     * @return bool
+     */
+    public function is_numbered() {
+        return false;
+    }
 }
